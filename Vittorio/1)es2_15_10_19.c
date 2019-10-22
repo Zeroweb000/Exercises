@@ -6,21 +6,19 @@
 int main(){
 	int anno;
 	scanf("%d",&anno);
-	if(anno%4 == 0){
-		if(anno%100 == 0){
-			if(anno%400 == 0){
+	if(anno%400 == 0)
+	{
+		if(anno%100 == 0)
+		{
+			if(anno%4 == 0)
+			{
 				printf("L'anno è bisestile\n");
 			}
-			else {
+			else 
+			{
 				printf("L'anno non è bisestile\n");
 			}
 		}
-		else{
-			printf("L'anno è bisestile\n");
-		}
-	}
-	else {
-		printf("L'anno non è bisestile\n");
 	}
 	return 0;
 }
